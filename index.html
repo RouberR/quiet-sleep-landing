@@ -305,6 +305,28 @@
         font-size: 0.92rem;
       }
 
+      .footer-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+
+      .footer-links a {
+        text-decoration: none;
+      }
+
+      .footer-links img {
+        display: block;
+        height: auto;
+      }
+
       @media (max-width: 860px) {
         .nav-links {
           display: none;
@@ -374,6 +396,11 @@
         .showcase img:nth-child(n + 4) {
           display: none;
         }
+
+        .footer-inner {
+          align-items: flex-start;
+          flex-direction: column;
+        }
       }
     </style>
   </head>
@@ -387,6 +414,7 @@
         <a href="#ritual">Ritual</a>
         <a href="#privacy">Privacy</a>
         <a href="#screens">Screens</a>
+        <a href="https://www.instagram.com/quietsleeppro/">Instagram</a>
         <a href="https://play.google.com/store/apps/details?id=com.rouber.quietsleep">Google Play</a>
       </nav>
     </header>
@@ -495,8 +523,21 @@
     </main>
 
     <footer>
-      <div class="shell">
-        Quiet Sleep is not a medical app and does not claim to treat insomnia or any health condition.
+      <div class="shell footer-inner">
+        <span>
+          Quiet Sleep is not a medical app and does not claim to treat insomnia or any health condition.
+        </span>
+        <div class="footer-links" aria-label="Quiet Sleep links">
+          <a href="https://www.instagram.com/quietsleeppro/">Instagram</a>
+          <a href="https://play.google.com/store/apps/details?id=com.rouber.quietsleep">Google Play</a>
+          <a href="https://fazier.com" target="_blank" rel="noopener">
+            <img
+              src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&amp;theme=light"
+              width="105"
+              alt="Launched on Fazier"
+            >
+          </a>
+        </div>
       </div>
     </footer>
   </body>
